@@ -1,0 +1,5 @@
+name,type,dim,nclass,index
+var0,real,1,1,0
+var1,pos,1,1,1
+var2,bin,1,2,2
+var3,cat,3,3,3

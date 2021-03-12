@@ -1,0 +1,25 @@
+name: shi-vae
+
+channels:
+  - pytorch
+  - defaults
+
+dependencies:
+  - pip=20.0.2=py37_1
+  - matplotlib=3.3.1
+  - numpy=1.19.1
+  - python=3.7
+  - pytorch=1.2.0
+  - scipy=1.5.2
+  - tqdm=4.48.2
+  - seaborn=0.10.1
+  - scikit-learn=0.23.2
+  - pip:
+    - pandas==1.1.1
+    - scikit-learn==0.23.2
+    - torchvision==0.7.0
+    - torch==1.6.0
+    - hmmlearn==0.2.4
+    - jupyter==1.0.0
+
+
