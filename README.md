@@ -36,8 +36,8 @@ pip install -r requirements.txt
 ## Data
 ### HMM Data
 In `data/`, you can find an already created synthetic dataset using an Heterogeneous HMM.
-If you want to create a custom heterogeneous HMM dataset, go to the [README.md](hmm_dataset/README.md) document inside 
-[hmm_dataset](hmm_dataset). 
+If you want to create a custom heterogeneous HMM dataset, go to the [README.md](src/hmm_dataset/README.md) document inside 
+[hmm_dataset](src/hmm_dataset). 
 
 ### Physionet
 In `data/physionet_burst/` unzip the zip file:
