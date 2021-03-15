@@ -2,10 +2,22 @@
 
 # Shi-VAE
 
+[![Paper](http://img.shields.io/badge/paper-arxiv.2002.11369-B31B1B.svg)](https://arxiv.org/abs/2103.07206)
+
 
 ![img](./imgs/shivae.jpeg)
 
 </div>
+
+Please, if you use this code, cite the [preprint](https://arxiv.org/abs/2103.07206) using:
+```
+@misc{barrejón2021medical,
+      title={Medical data wrangling with sequential variational autoencoders}, 
+      author={Daniel Barrejón and Pablo M. Olmos and Antonio Artés-Rodríguez},
+      year={2021},
+      eprint={2103.07206}
+}
+```
 
 ## Installation
 The installation can be done using Conda:
