@@ -9,12 +9,15 @@
 Code implementation for the paper [Medical data wrangling with sequential variational autoencoders](https://ieeexplore.ieee.org/document/9594658). Preprint also available in [arxiv](https://arxiv.org/abs/2103.07206).
 Please, if you use this code, cite the paper using:
 ```
-@misc{barrejón2021medical,
-      title={Medical data wrangling with sequential variational autoencoders}, 
-      author={Daniel Barrejón and Pablo M. Olmos and Antonio Artés-Rodríguez},
-      year={2021},
-      eprint={2103.07206}
-}
+@article{shivae,
+  author={Barrejon, Daniel and M. Olmos, Pablo and Artes-Rodriguez, Antonio},
+  journal={IEEE Journal of Biomedical and Health Informatics}, 
+  title={Medical data wrangling with sequential variational autoencoders}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/JBHI.2021.3123839}}
 ```
 
 ## Installation
