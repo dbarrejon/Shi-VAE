@@ -1,15 +1,13 @@
 <div align="center">
 
-# Shi-VAE
-
-[![Paper](http://img.shields.io/badge/paper-arxiv.2002.11369-B31B1B.svg)](https://arxiv.org/abs/2103.07206)
-
+# Shi-VAE: Sequential Heterogeneous Incomplete VAE
 
 ![img](./imgs/shivae.jpeg)
 
 </div>
 
-Please, if you use this code, cite the [preprint](https://arxiv.org/abs/2103.07206) using:
+Code implementation for the paper [Medical data wrangling with sequential variational autoencoders](https://ieeexplore.ieee.org/document/9594658). Preprint also available in [arxiv](https://arxiv.org/abs/2103.07206).
+Please, if you use this code, cite the paper using:
 ```
 @misc{barrejón2021medical,
       title={Medical data wrangling with sequential variational autoencoders}, 
@@ -84,6 +82,8 @@ python3 results_physionet.py --train -1
 
 ## Results
 ![img](./imgs/results.jpeg)
+![img](./imgs/histogram.jpeg)
+
 
 
 ## Help
