@@ -187,7 +187,7 @@ def real_vs_params_heter_missing(x_real, params, id=0, mask=None, types_list=Non
 
                 # mean
                 x_mean = params[var][0][id].flatten()
-                x_std = params[var][0][id].flatten()
+                x_std = params[var][1][id].flatten()
                 ax_plot.plot(t, x_mean, label="Rec", markevery=marker_real_miss.tolist(), **rec_kwargs)
                 upper_mean = x_mean + 2 * x_std
                 lower_mean = x_mean - 2 * x_std
@@ -297,7 +297,7 @@ def gener_params_heter_missing(params, id=0, types_list=None):
             if type in ['real', 'pos']:
                 # mean
                 x_mean = params[var][0][id].flatten()
-                x_std = params[var][0][id].flatten()
+                x_std = params[var][1][id].flatten()
                 T = x_mean.shape[0]
                 t = np.arange(0, T)
                 xticks = np.arange(0, T, step=10)
@@ -428,7 +428,7 @@ def real_vs_param_physionet(x_real, params, mask=None, id=0, seq_length=None, ty
                 ax_plot.plot(t, x_real[:, i], label='Real', **real_kwargs)
                 # mean
                 x_mean = params[var][0][id, :seq_length].flatten()
-                x_std = params[var][0][id, :seq_length].flatten()
+                x_std = params[var][1][id, :seq_length].flatten()
                 ax_plot.plot(t, x_mean, label="Rec", markevery=marker_real_miss.tolist(), **rec_kwargs)
 
                 upper_mean = x_mean + 2 * x_std
