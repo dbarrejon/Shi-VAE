@@ -287,10 +287,11 @@ class ShiVAEResult(BaseResult):
         x_dec = x_data[1]
         x_real = x_batch
         z_data, s_data = latent
-        # z: mean, std, sample
-        z_mean = z_data[0]
-        z_std = z_data[1]
-        z = z_data[2]
+        # z: sample, mean, std
+        z = z_data[0]
+        z_mean = z_data[1]
+        z_std = z_data[2]
+        # s: sample
         s = s_data[0]
 
         # Denormalize, to numpy and transpose
@@ -407,13 +408,12 @@ class ShiVAEResult(BaseResult):
             # x: params, x_dec
             params = x_data[0]
             x_dec = x_data[1]
-            # z: mean, std, sample
-            z_mean = z_data[0]
-            z_std = z_data[1]
-            z = z_data[2]
-            # s: probs, sample
-            # s_probs = s_data[0]
-            s = s_data[1]
+            # z: sample, mean, std
+            z = z_data[0]
+            z_mean = z_data[1]
+            z_std = z_data[2]
+            # s: sample
+            s = s_data[0]
 
             # Denormalize, to numpy and transpose
             params = self.scaler.param_inverse_transform(params, transpose=True)
