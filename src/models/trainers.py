@@ -107,7 +107,8 @@ class Trainer(BaseTrainer):
                          "  Categ Loss {nll_cat:.3f}  |" \
                          "  KL_q_z {kld_q_z:.3f}  KL_q_s {kld_q_s:.3f}"
         self.temp = 3
-        self.temp_scheduler = LinearTempScheduler(init_temp=3, end_temp=0.01, annealing_epochs=20)
+        temp_anneal = round(self.n_epochs * 0.9)  # TODO: Important!
+        self.temp_scheduler = LinearTempScheduler(init_temp=3, end_temp=0.1, annealing_epochs=temp_anneal)
 
         self.epoch_print_str = "\nEpoch: {}/{}\n" + self.print_str
         self.cols2plot = self.loss_list

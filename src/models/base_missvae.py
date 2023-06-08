@@ -308,8 +308,8 @@ class BaseMissVAE(nn.Module, ABC):
         std_q = torch.clamp(z_std, 1e-6, 1e20)
         std_p = torch.clamp(z_prior_std, 1e-6, 1e20)
 
-        z_mean = torch.clamp(z_mean, -1e-20, 1e20)
-        z_prior_mean = torch.clamp(z_prior_mean, -1e-20, 1e20)
+        z_mean = torch.clamp(z_mean, -1e20, 1e20)
+        z_prior_mean = torch.clamp(z_prior_mean, -1e20, 1e20)
 
         q = torch.distributions.Normal(z_mean, std_q)
         p = torch.distributions.Normal(z_prior_mean, std_p)
